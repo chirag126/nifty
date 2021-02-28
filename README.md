@@ -12,10 +12,10 @@ This repository contains source code necessary to reproduce some of the main res
     }
 
 <p align="center">
-    <img src="revised_proposed_model.pdf" width=750px>
+    <img src="revised_proposed_model.png" width=750px>
 </p>
 <p align="center"><i>
-  proposed model  
+  Our framework NIFTY can learn node representations that are both fair and stable (i.e., invariant to the sensitive attribute value and perturbations to the graph   structure and non-sensitive attributes) by maximizing the similarity between representations from diverse augmented graphs.  
 </i></p>
 
 ## 1. Setup
