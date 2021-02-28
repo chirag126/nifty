@@ -114,7 +114,7 @@ torch.backends.cudnn.allow_tf32 = False
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load data
-print(args.dataset)
+# print(args.dataset)
 
 # Load credit_scoring dataset
 if args.dataset == 'credit':
@@ -327,8 +327,8 @@ for epoch in range(args.epochs+1):
             best_loss = val_c_loss + val_s_loss
             torch.save(model.state_dict(), f'weights_ssf_{args.encoder}.pt')
 
-print("Optimization Finished!")
-print("Total time elapsed: {:.4f}s".format(time.time() - t_total))
+# print("Optimization Finished!")
+# print("Total time elapsed: {:.4f}s".format(time.time() - t_total))
 
 if args.model in ['gcn', 'sage', 'gin', 'jk', 'infomax']:
     model.load_state_dict(torch.load('weights_vanilla.pt'))

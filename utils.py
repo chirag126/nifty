@@ -30,13 +30,13 @@ def build_relationship(x, thresh=0.25):
         for neig in neig_id:
             if neig != ind:
                 idx_map.append([ind, neig])
-    print('building edge relationship complete')
+    # print('building edge relationship complete')
     idx_map =  np.array(idx_map)
     
     return idx_map
 
 def load_credit(dataset, sens_attr="Age", predict_attr="NoDefaultNextMonth", path="./dataset/credit/", label_number=1000):
-    print('Loading {} dataset from {}'.format(dataset, path))
+    # print('Loading {} dataset from {}'.format(dataset, path))
     idx_features_labels = pd.read_csv(os.path.join(path,"{}.csv".format(dataset)))
     header = list(idx_features_labels.columns)
     header.remove(predict_attr)
@@ -102,7 +102,7 @@ def load_credit(dataset, sens_attr="Age", predict_attr="NoDefaultNextMonth", pat
 
 
 def load_bail(dataset, sens_attr="WHITE", predict_attr="RECID", path="../dataset/bail/", label_number=1000):
-    print('Loading {} dataset from {}'.format(dataset, path))
+    # print('Loading {} dataset from {}'.format(dataset, path))
     idx_features_labels = pd.read_csv(os.path.join(path,"{}.csv".format(dataset)))
     header = list(idx_features_labels.columns)
     header.remove(predict_attr)
@@ -172,7 +172,7 @@ def load_bail(dataset, sens_attr="WHITE", predict_attr="RECID", path="../dataset
 
 
 def load_german(dataset, sens_attr="Gender", predict_attr="GoodCustomer", path="../dataset/german/", label_number=1000):
-    print('Loading {} dataset from {}'.format(dataset, path))
+    # print('Loading {} dataset from {}'.format(dataset, path))
     idx_features_labels = pd.read_csv(os.path.join(path,"{}.csv".format(dataset)))
     header = list(idx_features_labels.columns)
     header.remove(predict_attr)

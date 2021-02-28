@@ -136,7 +136,7 @@ if __name__ == '__main__':
         torch.cuda.manual_seed(args.run)
 
     # Load data
-    print(args.dataset)
+    # print(args.dataset)
 
     if args.dataset == 'german':
         dataset = 'german'
@@ -279,7 +279,7 @@ if __name__ == '__main__':
         print("The AUCROC of estimator: {:.4f}".format(auc_roc_test))
         print(f'Parity: {parity} | Equality: {equality}')
         print(f'F1-score: {f1_s}')
-        print(f'CounterFactual Fairness: 0')
+        print(f'CounterFactual Fairness: N/A')
         print(f'Robustness Score: {robustness_score}')
     else:
         print("Please set smaller acc/roc thresholds")
