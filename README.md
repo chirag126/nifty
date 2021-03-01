@@ -1,12 +1,12 @@
 ## Towards a Unified Framework for Fair and Stable Graph Representation Learning
 
-This repository contains source code necessary to reproduce some of the main results in [the paper]():
+This repository contains source code necessary to reproduce some of the main results in [the paper](https://arxiv.org/abs/2102.13186):
 
 **If you use this software, please consider citing:**
     
-    @inproceedings{agarwal2021towards,
+    @inproceedings{agarwal2021unified,
       title={Towards a Unified Framework for Fair and Stable Graph Representation Learning},
-      author={Agarwal, Chirag, Lakkaraju, Himabindu, and Zitnik, Marinka},
+      author={Chirag Agarwal and Himabindu Lakkaraju and Marinka Zitnik},
       year={2021},
       booktitle={arXiv},
     }
