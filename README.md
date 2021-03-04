@@ -27,7 +27,7 @@ This repository is built using PyTorch. You can install the necessary libraries 
 
 
 ## 2. Datasets
-We ran our experiments on three highs-stakes read-world datasets. All the data are present in the './datasets' folder. Due to space constraints the edge file of the credit dataset is zipped.
+We ran our experiments on three high-stake read-world datasets. All the data are present in the './datasets' folder. Due to space constraints the edge file of the credit dataset is zipped.
 
 ## 3. Usage
 The main scripts running the experiments on the state-of-the-art GNNs and their NIFTY-augmented counterparts is in [nifty_sota_gnn.py](nifty_sota_gnn.py)
