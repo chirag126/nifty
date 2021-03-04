@@ -4,7 +4,7 @@ This repository contains source code necessary to reproduce some of the main res
 
 **If you use this software, please consider citing:**
     
-    @inproceedings{agarwal2021unified,
+    @article{agarwal2021unified,
       title={Towards a Unified Framework for Fair and Stable Graph Representation Learning},
       author={Chirag Agarwal and Himabindu Lakkaraju* and Marinka Zitnik*},
       year={2021},
