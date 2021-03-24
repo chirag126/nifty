@@ -37,18 +37,18 @@ Script 1: Evaluate fairness and stability performance of GCN (for German Graph d
 `python nifty_sota_gnn.py --dropout 0.5 --hidden 16 --lr 1e-3 --epochs 1000 --model gcn --dataset german --seed 1`
 <p align="left"><i>
   The AUCROC of estimator: 0.7605<br/>
-  Parity: 0.395253682487725 | Equality: 0.2731092436974789<br/>
-  F1-score: 0.807799442896936<br/>
-  CounterFactual Fairness: 0.29600000000000004<br/>
-  Robustness Score: 0.11599999999999999<br/>
+  Parity: 0.3952 | Equality: 0.2731<br/>
+  F1-score: 0.8078<br/>
+  CounterFactual Fairness: 0.2960<br/>
+  Robustness Score: 0.1160<br/>
 </i></p>
 
 Script 2: Evaluate fairness and stability performance of NIFTY-GCN (for German Graph dataset)
 `python nifty_sota_gnn.py --drop_edge_rate_1 0.001 --drop_edge_rate_2 0.001 --drop_feature_rate_1 0.1 --drop_feature_rate_2 0.1 --dropout 0.5 --hidden 16 --lr 1e-3 --epochs 1000 --model ssf --encoder gcn --dataset german --sim_coeff 0.6 --seed 1`
 <p align="left"><i>
   The AUCROC of estimator: 0.7205<br/>
-  Parity: 0.010365521003818934 | Equality: 0.01995798319327735<br/>
-  F1-score: 0.823529411764706<br/>
+  Parity: 0.0104 | Equality: 0.0199<br/>
+  F1-score: 0.8235<br/>
   CounterFactual Fairness: 0.0<br/>
   Robustness Score: 0.0<br/>
 </i></p>  
@@ -57,20 +57,20 @@ Script 3: Evaluate fairness and stability performance of FairGCN baseline (for G
 `python baseline_fairGNN.py --dropout 0.5 --hidden 16 --lr 1e-3 --epochs 1000 --dataset german --seed 1 --model gcn`
 <p align="left"><i>
   The AUCROC of estimator: 0.7549<br/>
-  Parity: 0.27632296781232957 | Equality: 0.17226890756302526<br/>
-  F1-score: 0.825065274151436<br/>
+  Parity: 0.2763 | Equality: 0.1723<br/>
+  F1-score: 0.8251<br/>
   CounterFactual Fairness: N/A<br/>
-  Robustness Score: 0.04400000000000004<br/>
+  Robustness Score: 0.0440<br/>
 </i></p>   
 
 Script 4: Evaluate fairness and stability performance of RobustGCN (for German Graph dataset)
 `python nifty_sota_gnn.py --dropout 0.5 --hidden 16 --lr 1e-3 --epochs 1000 --model rogcn --dataset german --seed 5`
 <p align="left"><i>
   The AUCROC of estimator: 0.6230<br/>
-  Parity: 0.24495362793235131 | Equality: 0.2048319327731093<br/>
-  F1-score: 0.614334470989761<br/>
-  CounterFactual Fairness: 0.08799999999999997<br/>
-  Robustness Score: 0.132<br/>
+  Parity: 0.2449 | Equality: 0.2048<br/>
+  F1-score: 0.6143<br/>
+  CounterFactual Fairness: 0.0880<br/>
+  Robustness Score: 0.1320<br/>
 </i></p>  
 
 ## 4. Licenses
