@@ -22,6 +22,7 @@ This repository contains source code necessary to reproduce some of the main res
 
 ### Installing software
 This repository is built using PyTorch. You can install the necessary libraries by pip installing the requirements text file `pip install -r ./requirements.txt`
+After installing the packages from the requirements.txt, install the PyTorch Geometric packages following the instructions from [here.](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html)
 
 **Note:** We ran our codes using python=3.7.9
 
